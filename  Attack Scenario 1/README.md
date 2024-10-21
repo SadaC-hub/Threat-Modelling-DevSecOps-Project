@@ -49,6 +49,7 @@ With access to the Solari Health 360 application, the attacker can exfiltrate se
 
 ```mermaid
 
+
 flowchart LR
     A[GitHub Repos] --> B{CI/CD Pipeline GH Actions}
     A -->|Identify target| B
@@ -62,3 +63,4 @@ flowchart LR
     H -->|Establish persistence| H
     H -->|Communicate with C&C server| H
     H -->|Issue commands| L
+    H -->|Steal sensitive data| M
